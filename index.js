@@ -24,7 +24,7 @@ captureButton.addEventListener("click", () => {
         const formData = new FormData();
         formData.append("image", blob, "capture.png");
 
-        fetch("https://isrecyclable.onrender.com/predict", {
+        fetch("https://isrecyclable.netlify.app/predict", {
             method: "POST",
             body: formData,
         })
